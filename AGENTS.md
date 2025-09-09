@@ -107,11 +107,11 @@ module.exports = {
 
 - ESLint enforces:
   - ES2022 syntax
-  - Single quotes with template literals allowed
+  - Single quotes (template literals allowed)
   - Semicolons required
   - No console logging
   - Strict equality (===)
-  - @medic ESLint config extends
+  - Extends @medic ESLint config
 - EditorConfig settings:
   - 2-space indentation
   - LF line endings
