@@ -31,8 +31,12 @@ npm install
 ### Docker Alternative
 
 ```bash
-# Run using Docker
-docker run -it --rm -v "$PWD":/workdir medicmobile/cht-app-ide <command>
+# Run using Docker (example: run tests)
+docker run -it --rm -v "$PWD":/workdir medicmobile/cht-app-ide npm test
+# Or run end-to-end tests
+docker run -it --rm -v "$PWD":/workdir medicmobile/cht-app-ide npm run test-e2e
+# For more available commands, see the documentation at https://github.com/medic/cht-conf#usage or run:
+docker run -it --rm -v "$PWD":/workdir medicmobile/cht-app-ide --help
 ```
 
 ## Build & Test
